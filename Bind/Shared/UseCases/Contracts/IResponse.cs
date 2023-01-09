@@ -1,8 +1,10 @@
-﻿namespace Shared.UseCases.Contracts;
+﻿using Shared.ValueObjects;
 
-public class IResponse
+namespace Shared.UseCases.Contracts;
+
+public interface IResponse
 {
     public IReadOnlyCollection<Error> Errors { get; }
     public int StatusCode { get; }
-    public bool IsSuccess { get; set; }
+    public bool IsSuccess { get; }
 }
