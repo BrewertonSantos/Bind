@@ -1,5 +1,8 @@
 ﻿namespace Shared.ValueObjects;
 
+/// <summary>
+/// A value object to aggregate properties of UTM (Urchin traffic monitor) classifier to marketing campaign
+/// </summary>
 public class Utm : ValueObject
 {
     #region Constructors
